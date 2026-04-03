@@ -1,6 +1,6 @@
 # ============================================================
 # Tybee Island Flood Risk - Data Loading Preamble
-# Ken Kau - UWyoming Environmental Economics
+# Ken Kau - UWyoming Environmental Economics and HUNTER
 # ============================================================
 
 library(terra)
@@ -12,11 +12,11 @@ library(leaflet)      # interactive maps
 library(mapview)      # even quicker spatial checks - one line to map any sf object
 library(fixest)
 library(stargazer)
-
+library(here)
 # ============================================================
 # PATHS
 # ============================================================
-base <- "/Users/kennethkau/Desktop/PROJECTS/KAU-REINFORCE/TybeeData"
+base <- here("RawData")
 
 path_elev     <- file.path(base, "Elevation")
 path_housing  <- file.path(base, "Housing")
